@@ -19,10 +19,9 @@ def add_Book():
 def query_users_details():
     connie = sqlite3.connect(db_local)
     c = connie.cursor()
-    c.execute("""sumary_line
+    c.execute("""
     SELECT * FROM Users
-    """
-    )
+    """)
     Users_info = c.fetchall()
     return Users_info
 

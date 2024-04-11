@@ -20,8 +20,9 @@
       <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
     </div>
 
-    <p>{{ Users_info }}</p>
-
+    {% for Users in Users_info %}
+    <p>{{ Users }}</p>
+    {% endfor %}
 
 
     <table class="table table-striped">
